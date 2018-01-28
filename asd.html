@@ -1,0 +1,15 @@
+<input id="date" type="date" onchange="setDate()">
+
+<script>
+	function setDate(){
+		var getDate = document.getElementById('date').value;
+		date = new Date(getDate);
+		day = date.getDate();
+		mon = date.getMonth() + 1;
+		yr = date.getFullYear();
+		
+		console.log(day,'/',mon,'/',yr);
+		document.getElementById('date').value = day+'/'+mon+'/'+yr;
+	}
+	
+</script>
