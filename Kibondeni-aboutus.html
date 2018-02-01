@@ -52,18 +52,18 @@ quality of life at all levels.
 			Kibondeni College of Catering and Hospitality
 Management is a project of Nurisha Trust (an
 offshoot of Kianda Foundation) committed
-to the education and welfare of women in Kenya.
+to the education and welfare of women in Kenya.<br>
 It began in 1961 as an in-service catering training
 school. In 1969 Kibondeni School of Institutional
 Management was authorized to issue its own
-certifi cates at the end of the training, thus becoming
+certificates at the end of the training, thus becoming
 an educational institution in its own right.
 Kibondeni aims primarily at improving the standards
 of living of young women from low income families
 equipping them with the knowledge, skills and
 attitudes to enable them to secure employment to
 meet their needs and those of their families and make
-them self-reliant. Throughout the courses, emphasis
+them self-reliant.<br> Throughout the courses, emphasis
 is laid on character training, spirit of service and the
 importance of professional work for the development
 of the person and the country.
@@ -119,11 +119,13 @@ undertaken with courage and a generous heart.
 <script>
 $(document).ready(() => {
 	
-	if($(document).width() > 550){
+	if($(document).width() > 150){
 		var fadeStart = 150,
 			fadeUntil = 350,
 			fadingout = $('.mvision'),
 			fadingin = $('.about');
+		
+		fadingin.css('opacity', 0);
 
 		$(document).on('scroll', function () {
 			var offset = $(document).scrollTop(),
