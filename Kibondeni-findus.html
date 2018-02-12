@@ -74,6 +74,16 @@ to the education and welfare of women in Kenya.</p><a href="Kibondeni-aboutus.ht
 <script src="Assets/jquery-3.2.1.min.js" ></script>
 
 <script>
+	
+	if ($(this).width() < 550){
+		$('.mini-nav').css('opacity', 1);
+//            $('.search').addClass('sticky');
+	} else {
+		$('.mini-nav').css('opacity', 0);
+//            $('.search').removeClass('sticky');
+//			$('.links').css('display', 'none');
+	}
+	
 	 function CenterControl(controlDiv, map) {
 
         // Set CSS for the control border.
@@ -143,15 +153,17 @@ to the education and welfare of women in Kenya.</p><a href="Kibondeni-aboutus.ht
 <style>
 	.bg {
 /*		box-shadow: 0 2px 2px 1px black;*/
-		margin-bottom: 310px;
+		margin-bottom: 275px;
 	}
 	
 	.kmap-outer {
 		border: 1px solid rgba(250,165,26,.5);
 		min-width: 420px;
-		height: 420px;
+		height: calc(100vh - 215px);
+		min-height: 250px;
+		max-height: 500px;
 		width: 50%;
-		margin: 80px auto 45px auto;
+		margin: 70px auto 45px auto;
 		padding: 10px;
 		border-radius: 5px;
 	}
@@ -173,6 +185,20 @@ to the education and welfare of women in Kenya.</p><a href="Kibondeni-aboutus.ht
 		position: fixed;
 		bottom: 0;
 		z-index: -9;
+	}
+	
+	@media (max-width: 550px) {
+		.bg {
+/*			box-shadow: 0 2px 2px 1px black;*/
+			margin-bottom: 600px;
+		}
+		
+		.kmap-outer {
+			min-width: 250px;
+			height: calc(100vh - 200px);
+			min-height: 250px;
+			width: 95%;
+		}
 	}
 </style>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDB15iQjgHtag8hySmc2eyyloGT7SLgck4&callback=initMap"
