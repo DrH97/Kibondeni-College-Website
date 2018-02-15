@@ -479,6 +479,21 @@ li.logo .img{
 	color: rgba(200,48,52,1);
 }
 
+.footer ul i {
+	color: white;
+}
+
+.footer-center ul li {
+	margin-left: 2rem;
+	margin-top: -1.2rem;
+}
+
+.footer-right ul li {
+	font-size: 1.5rem;
+	margin: 0 5px;
+}
+
+
 
 /*	GALLERY PAGE */
 
