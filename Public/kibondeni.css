@@ -185,6 +185,7 @@ li.logo .img{
 
 /* Caption text */
 .text {
+	display: none;
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
@@ -476,7 +477,7 @@ li.logo .img{
 }
 
 .footer a{
-	color: rgba(200,48,52,1);
+	color: rgba(150,208,252,1);
 }
 
 .footer ul i {
@@ -486,6 +487,10 @@ li.logo .img{
 .footer-center ul li {
 	margin-left: 2rem;
 	margin-top: -1.2rem;
+}
+
+.footer-center a {
+	background: none;
 }
 
 .footer-right ul li {
@@ -693,21 +698,23 @@ li.logo .img{
 		width: 100%;
 		background-image: linear-gradient(to bottom left, rgba(139,24,27,1), rgba(219,28,36,1));
 		height: 50px;
-		z-index: 0;
+		z-index: 1;
 		opacity: 0;
 	}
 	
 	.mini-nav .toplogo{
 		display: block;
+		height: 50px;
 	}
 	
 	.navbar{
 		top: 0;
-		display: block;
+		display: none;
 	}
 		
 	.links{
 		width: 100%;
+		margin-top: 50px;
 	}
 	.menu{
 		display: block;
@@ -718,6 +725,7 @@ li.logo .img{
 		background: white;
 		padding: 10px;
 		box-shadow: 0px 0px 3px 1px grey;
+		z-index: 1;
 	}
 	.links .link{
 		display: none;
@@ -725,6 +733,7 @@ li.logo .img{
 		height: 30px;
 		line-height: 2;
 */
+		background: rgba(139,24,27,.9);
 		width: 100%;
 		text-align: center;
 	}
@@ -736,6 +745,7 @@ li.logo .img{
 	.slideshow{
 		height: 150px;
 /*		background: blue;*/
+		
 	}
 
 	.content{
@@ -807,3 +817,5 @@ li.logo .img{
 
 }
 
+	</body>
+</html>
